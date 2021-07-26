@@ -1,0 +1,160 @@
+html, body{
+    background-color: rgb(241, 241, 241);
+    margin: 0;
+}
+
+header{
+    position: fixed;
+    background-color: rgb(241, 241, 241);
+    width: 100%;
+    top: 0px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 70px;
+}
+
+#logo{
+    height: 35px;
+    margin-right: auto;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    margin-right: 4em;
+    font-size: 1.1rem;
+}
+
+main{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form{
+    display: inherit;
+    flex-direction: inherit;
+    align-items: inherit;
+}
+
+input[type="text"]{
+    width: 300px;
+    font-size: 0.9rem;
+    height: 2em;
+}
+
+.select-button{
+    background-color: rgb(255, 208, 0);
+    border: none;
+    border-radius: 2px;
+    font-size: 1.1rem;
+    padding: 0.3em;
+    font-weight: bold;
+    margin-top: 0.5em;
+}
+
+.select-button:hover{
+    animation-name: orange-background;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes orange-background{
+    100%{
+        background-color: orange;
+    }
+}
+
+ul{
+    list-style: none;
+}
+
+
+figure{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+}
+
+figure > img{
+    width: 120px;
+}
+
+figcaption{
+    padding: 1em;
+}
+
+figcaption > h2, figcaption > p{
+    margin: 0.2em 0;
+}
+
+#video{
+    height: 315px;
+    width: 500px;
+}
+
+#offers{
+    display: flex;
+    justify-items: stretch;
+}
+
+#offer{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+    padding-bottom: 10px;
+    width: 300px;
+}
+
+#offer > h3{
+    background-color: rgb(207, 206, 206);
+    margin-top: 0;
+    box-sizing: border-box;
+    text-align: center;
+    width: 100%;
+    padding: 1em;
+}
+
+
+
+#offer .select-button{
+    font-weight: lighter;
+}
+
+#offer a{
+    margin: 0;
+}
+
+#offer p{
+    margin: 0.5rem;
+}
+
+.cost{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+footer{
+    background-color: rgb(207, 206, 206);
+    margin-bottom: 0;
+    padding: 20px;
+    padding-right: 70px;
+    text-align: end;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer a{
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+footer > p{
+    margin: 0;
+}
